@@ -10,7 +10,8 @@ Summary(pl):	DBIx::AnyDBD - klasa niezale¿no¶ci od DBD
 Name:		perl-DBIx-AnyDBD
 Version:	2.01
 Release:	2
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b8dcb0ec10bcc7e8d83e1a031b73ab6b
