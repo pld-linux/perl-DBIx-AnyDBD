@@ -9,7 +9,7 @@ Summary:	DBIx::AnyDBD - DBD independent class
 Summary(pl):	DBIx::AnyDBD - klasa niezale¿no¶ci od DBD
 Name:		perl-DBIx-AnyDBD
 Version:	2.01
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
