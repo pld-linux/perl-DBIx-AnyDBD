@@ -5,18 +5,18 @@
 %define	pdir	DBIx
 %define	pnam	AnyDBD
 Summary:	DBIx::AnyDBD - DBD independant class
-#Summary(pl):	
+Summary(pl):	DBIx::AnyDBD - klasa niezale¿no¶ci od DBD
 Name:		perl-DBIx-AnyDBD
 Version:	2.00
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-DBI
 %endif
+BuildRequires:	rpm-perlprov >= 3.0.3-26
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,8 +28,13 @@ responsibility for coding different SQL on different platforms, but to
 simply provide a platform that uses the right class at the right time
 for whatever DB is currently in use.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ta klasa udostêpnia programistom aplikacji klasê abstrakcy na poziomie
+ponad DBI, pozwalaj±c± pisaæ aplikacje dzia³aj±ce na wielu platformach
+bazodanowych. Ide± nie jest wyeliminowanie konieczno¶ci u¿ywania
+ró¿nego SQL dla ró¿nych platform, ale dostaczenie platformy u¿ywaj±cej
+w³a¶ciwej klasy we w³a¶ciwym czasie, w zale¿no¶ci od aktualnie
+u¿ywanej bazy danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -37,6 +42,7 @@ for whatever DB is currently in use.
 %build
 perl Makefile.PL
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
