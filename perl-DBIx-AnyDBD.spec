@@ -32,10 +32,10 @@ simply provide a platform that uses the right class at the right time
 for whatever DB is currently in use.
 
 %description -l pl
-Ta klasa udostêpnia programistom aplikacji klasê abstrakcy na poziomie
+Ta klasa udostêpnia programistom aplikacji klasê abstrakcji na poziomie
 ponad DBI, pozwalaj±c± pisaæ aplikacje dzia³aj±ce na wielu platformach
 bazodanowych. Ide± nie jest wyeliminowanie konieczno¶ci u¿ywania
-ró¿nego SQL dla ró¿nych platform, ale dostaczenie platformy u¿ywaj±cej
+ró¿nego SQL dla ró¿nych platform, ale dostarczenie platformy u¿ywaj±cej
 w³a¶ciwej klasy we w³a¶ciwym czasie, w zale¿no¶ci od aktualnie
 u¿ywanej bazy danych.
 
