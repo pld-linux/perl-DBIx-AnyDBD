@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	DBIx
-%define	pnam	AnyDBD
+%define		pdir	DBIx
+%define		pnam	AnyDBD
 Summary:	DBIx::AnyDBD - DBD independent class
 Summary(pl):	DBIx::AnyDBD - klasa niezale¿no¶ci od DBD
 Name:		perl-DBIx-AnyDBD
