@@ -1,14 +1,15 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	DBIx
 %define	pnam	AnyDBD
 Summary:	DBIx::AnyDBD - DBD independant class
 Summary(pl):	DBIx::AnyDBD - klasa niezale¿no¶ci od DBD
 Name:		perl-DBIx-AnyDBD
-Version:	2.00
-Release:	2
+Version:	2.01
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -58,6 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc Change* README
 %{perl_sitelib}/%{pdir}/*.pm
 %{_examplesdir}/%{name}-%{version}
 %{_mandir}/man3/*
