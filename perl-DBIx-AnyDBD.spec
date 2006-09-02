@@ -24,20 +24,20 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This class provides application developers with an abstraction class
-a level away from DBI, that allows them to write an application that
+This class provides application developers with an abstraction class a
+level away from DBI, that allows them to write an application that
 works on multiple database platforms. The idea isn't to take away the
 responsibility for coding different SQL on different platforms, but to
 simply provide a platform that uses the right class at the right time
 for whatever DB is currently in use.
 
 %description -l pl
-Ta klasa udostêpnia programistom aplikacji klasê abstrakcji na poziomie
-ponad DBI, pozwalaj±c± pisaæ aplikacje dzia³aj±ce na wielu platformach
-bazodanowych. Ide± nie jest wyeliminowanie konieczno¶ci u¿ywania
-ró¿nego SQL dla ró¿nych platform, ale dostarczenie platformy u¿ywaj±cej
-w³a¶ciwej klasy we w³a¶ciwym czasie, w zale¿no¶ci od aktualnie
-u¿ywanej bazy danych.
+Ta klasa udostêpnia programistom aplikacji klasê abstrakcji na
+poziomie ponad DBI, pozwalaj±c± pisaæ aplikacje dzia³aj±ce na wielu
+platformach bazodanowych. Ide± nie jest wyeliminowanie konieczno¶ci
+u¿ywania ró¿nego SQL dla ró¿nych platform, ale dostarczenie platformy
+u¿ywaj±cej w³a¶ciwej klasy we w³a¶ciwym czasie, w zale¿no¶ci od
+aktualnie u¿ywanej bazy danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-cp -ar example/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a example/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
