@@ -6,7 +6,7 @@
 %define		pdir	DBIx
 %define		pnam	AnyDBD
 Summary:	DBIx::AnyDBD - DBD independent class
-Summary(pl.UTF-8):   DBIx::AnyDBD - klasa niezależności od DBD
+Summary(pl.UTF-8):	DBIx::AnyDBD - klasa niezależności od DBD
 Name:		perl-DBIx-AnyDBD
 Version:	2.01
 Release:	3
