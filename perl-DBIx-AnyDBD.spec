@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# Do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	DBIx
 %define		pnam	AnyDBD
+%include	/usr/lib/rpm/macros.perl
 Summary:	DBIx::AnyDBD - DBD independent class
 Summary(pl.UTF-8):	DBIx::AnyDBD - klasa niezależności od DBD
 Name:		perl-DBIx-AnyDBD
@@ -15,11 +15,12 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b8dcb0ec10bcc7e8d83e1a031b73ab6b
+URL:		http://search.cpan.org/dist/DBIx-AnyDBD/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-DBI
 %endif
-BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
