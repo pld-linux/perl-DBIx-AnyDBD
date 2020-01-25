@@ -4,7 +4,6 @@
 
 %define		pdir	DBIx
 %define		pnam	AnyDBD
-%include	/usr/lib/rpm/macros.perl
 Summary:	DBIx::AnyDBD - DBD independent class
 Summary(pl.UTF-8):	DBIx::AnyDBD - klasa niezależności od DBD
 Name:		perl-DBIx-AnyDBD
