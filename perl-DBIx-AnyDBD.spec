@@ -7,18 +7,20 @@
 Summary:	DBIx::AnyDBD - DBD independent class
 Summary(pl.UTF-8):	DBIx::AnyDBD - klasa niezależności od DBD
 Name:		perl-DBIx-AnyDBD
-Version:	2.01
-Release:	4
+Version:	2.03
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b8dcb0ec10bcc7e8d83e1a031b73ab6b
-URL:		http://search.cpan.org/dist/DBIx-AnyDBD/
+Source0:	https://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	39a33b587ce684d009ad97f93ded8bf5
+URL:		https://search.cpan.org/dist/DBIx-AnyDBD/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-DBI
+BuildRequires:	perl-Test-Differences
+BuildRequires:	perl-Test-Most
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
